@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My HIT</string>
+    <string name="loading">Loading</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trang_ch">Trang chủ</string>
+    <string name="home">Home</string>
+    <string name="introduction">Introduction</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="cai_dat">Cài đặt</string>
+    <string name="registered">ĐÃ ĐĂNG KÝ</string>
+    <string name="pending">ĐANG CHỜ XỬ LÝ</string>
+    <string name="toast_regis_failure">Đăng ký thất bại. Bạn chỉ được đăng ký tối đa 2 lớp học</string>
+</resources>
