@@ -42,6 +42,9 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
         binding.btnAccount.setOnClickListener{
             findNavController().navigate(R.id.action_settingFragment_to_accountFragment)
         }
+        binding.btnDonate.setOnClickListener {
+
+        }
 
         binding.btnSwitchSavePassword.setOnCheckedChangeListener { _, isChecked ->
             val pref = requireActivity().getSharedPreferences("account", MODE_PRIVATE)
@@ -51,15 +54,11 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBind
                 val savedUsername = pref.getString("saved_username", "")
                 val savedPassword = pref.getString("saved_password", "")
                 Log.d("SettingFragment", "Switch is checked. Username: $savedUsername, Password: $savedPassword")
-                context?.let {
-                    Toast.makeText(it, "Lưu thành công", Toast.LENGTH_SHORT).show()
-                }
+                Log.d("SettingFragment", "Da luu mat khau thanh cong")
             } else {
                 editor.remove("saved_username").commit()
                 editor.remove("saved_password").commit()
-                context?.let {
-                    Toast.makeText(it, "Xóa thành công", Toast.LENGTH_SHORT).show()
-                }
+                Log.d("SettingFragment", "Xoa mat khau thanh cong")
             }
             Log.d("SettingFragment", "Trạng thái lưu mật khẩu : $isChecked")
         }
